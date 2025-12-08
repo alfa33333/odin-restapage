@@ -1,3 +1,4 @@
 import "./styles.css";
+import home from "./home";  
 
-console.log("Hello, Webpack!");
+home()
