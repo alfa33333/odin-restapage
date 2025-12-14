@@ -8,11 +8,13 @@ import about from "./about";
 const buttonList = [
     "homeButton",
     "menuButton",
+    "aboutButton"
 ];
 
 const buttonfunct = [
     home,
-    menu
+    menu,
+    about
 ];
 
 buttonList.forEach((button, index) => {
@@ -31,6 +33,6 @@ function clearContent(element) {
 }
 
 
-// home();
+home();
 // menu();
-about();
+// about();
