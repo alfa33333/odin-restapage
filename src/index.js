@@ -1,6 +1,7 @@
 import "./styles.css";
 import home from "./home";  
 import menu from "./menu";
+import about from "./about";
 
 
 
@@ -32,3 +33,4 @@ function clearContent(element) {
 
 // home();
 // menu();
+about();
