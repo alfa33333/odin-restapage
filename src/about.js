@@ -13,30 +13,36 @@ const profiles = [
   },
 ];
 
+function createProfileCard({ name, role, imgSrc }) {
+  const card = document.createElement("div");
+  card.classList.add("profile");
+
+  const img = document.createElement("img");
+  img.src = imgSrc;
+
+  const title = document.createElement("h2");
+  title.textContent = name;
+
+  const description = document.createElement("p");
+  description.textContent = role;
+
+  card.append(img, title, description);
+  return card;
+}
+
 export default function about() {
   const content = document.getElementById("content");
   const main = document.createElement("div");
   main.classList.add("main");
-  content.appendChild(main);
+
   const aboutTitle = document.createElement("h1");
   aboutTitle.textContent = "About Us";
-  main.appendChild(aboutTitle); 
+
   const display = document.createElement("div");
   display.classList.add("display");
-  profiles.forEach((profile) => {
-    const profileCard = document.createElement("div");
-    profileCard.classList.add("profile");
-    const img = document.createElement("img");
-    img.src = profile.imgSrc;
-    profileCard.appendChild(img);
-    const title = document.createElement("h2");
-    title.textContent = profile.name;
-    profileCard.appendChild(title);
-    const description = document.createElement("p");
-    description.textContent = profile.role;
-    profileCard.appendChild(description);
-    display.appendChild(profileCard);
-  });
 
-    main.appendChild(display);
+  profiles.forEach(profile => display.appendChild(createProfileCard(profile)));
+
+  main.append(aboutTitle, display);
+  content.appendChild(main);
 }
