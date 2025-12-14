@@ -30,5 +30,5 @@ function clearContent(element) {
 }
 
 
-home();
+// home();
 // menu();

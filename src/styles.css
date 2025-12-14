@@ -1,21 +1,27 @@
+:root {
+    --main-border: 2px solid black;
+    --radius: 20px;
+}
+
+
 ul {
     list-style: none;
     padding: 0;
 }
 
 .main {
-    border: 2px solid black;
+    border: var(--main-border);
     height: 800px;
     width: 800px;
     margin: auto;
     text-align: center;
-    border-radius: 20px;
+    border-radius: var(--radius);
     background-color: #d7c6f6;
 }
 
 .heroimg {
-        border: 2px solid black;
-        border-radius: 20px;
+        border: var(--main-border);
+        border-radius: var(--radius);
     width: 400px;
 
 }
@@ -39,4 +45,18 @@ ul {
 .menu div {
     margin-top: auto;;
     margin-bottom: auto;
+}
+
+.display {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile {
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+    border: var(--main-border);
+    border-radius: var(--radius);
+
 }
