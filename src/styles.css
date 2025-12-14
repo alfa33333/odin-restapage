@@ -43,20 +43,27 @@ ul {
 }
 
 .menu div {
-    margin-top: auto;;
+    margin-top: auto;
     margin-bottom: auto;
 }
 
 .display {
     display: flex;
     justify-content: space-around;
+    padding: 30px;
 }
 
 .profile {
     overflow: hidden;
-    width: 300px;
+    width: 400px;
     height: 400px;
+
+}
+
+.profile img {
+    width: 50%;
+    margin-top: 20px;
     border: var(--main-border);
     border-radius: var(--radius);
-
+    height: auto;
 }
