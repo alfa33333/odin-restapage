@@ -3,6 +3,11 @@
     --radius: 20px;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+}
+
 
 ul {
     list-style: none;
@@ -11,7 +16,7 @@ ul {
 
 .main {
     border: var(--main-border);
-    height: 800px;
+    height: 700px;
     width: 800px;
     margin: auto;
     text-align: center;
@@ -66,4 +71,38 @@ ul {
     border: var(--main-border);
     border-radius: var(--radius);
     height: auto;
+}
+
+nav {
+    width: 800px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #cbcbeb;
+    border: var(--main-border);
+    border-top: none;
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    gap: 50px;
+}
+
+nav button {
+    /* margin: auto; */
+    height: 50px;
+    width: 100px;
+    border-bottom: none;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    background-color: #d7c6f6;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+nav button:active {
+    background-color: #dcacf3;
+    border: 3px solid black;
+    border-bottom: none;
+
 }
